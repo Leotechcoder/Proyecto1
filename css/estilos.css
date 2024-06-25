@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*EMPIEZO AJUSTANDO TIPOGRAFIA*/
+
+p,
+ol {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#item7 {
+  font-size: 35px;
+  list-style-position: inside;
+  background-color: #fcee21;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+h4 {
+  display: inline;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #fcee21;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: inline;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #fcee21;
+}
+
+h1,
+h2,
+h6 {
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer {
+  background-color: #fcee21;
+}
+footer h6 {
+  font-size: 20px;
+  display: inline;
+  margin-right: 5%;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/*AJUSTE TAMAÑO DE LOS ELEMENTOS*/
+
+body{
+  width:100%;
+}
+
+/*AJUSTE PROPIEDADES HEADER*/
+
+nav ul li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+footer,
+header {
+  border: 2px solid coral;
+  width: 100%;
+}
+
+/*AJUSTE PROPIEDADES MAIN*/
+
+main {
+  width: 100%;
+}
+
+#inicio {
+  width: 100%;
+}
+
+.wapas {
+  border: 2px solid;
+}
+
+.somos {
+  border: 2px solid;
+}
+
+.gestion {
+  border: 2px solid;
+}
+
+.ajustarimagen,
+.lista {
+  display: block;
+  width: 400px;
+  border: 2px solid;
+}
+
+ol li {
+  font-size: 2em;
+  list-style-position: inside;
+}
+
+/*AJUSTE PROPIEDADES CONTACTO*/
+
+#titulocontacto {
+  display: inline-block;
+  color: white;
+  background-color: black;
+}
+
+#unomas {
+  display: inline-block;
+  background-color: #fcee21;
+}
+
+.formulario {
+  background-color: bisque;
+  width: 300px;
+}
+
+label {
+  display: block;
+  width: 80%;
+  margin-left: 10px;
+  border: 1px solid lightblue;
+}
+
+.namemail,
+textarea {
+  display: block;
+  width: 100%;
+  margin: auto;
+  border: 1px solid;
+}
+
+.botones {
+  width: 118px;
+  border: 1px solid turquoise;
+}
+
+/*AJUSTE PROPIEDADES REDES*/
+
+div img {
+  width: 100px;
+}
+
+div a,
+img {
+  display: inline;
+}
+
+/*UTILIZO FLEX EN HEADER*/
+
+header {
+  display: flex;
+}
+
+nav {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+ul {
+  display: flex;
+}
+
+/*FLEX EN MAIN*/
+
+main section {
+  display: flex; /*aplico flex a las secciones del main*/
+}
+
+/*trabajo la propiedad flex en la section="inicio"*/
+
+#inicio {
+  flex-wrap: wrap;
+}
+
+.foto,
+.somos,
+.gestion,
+.wapas{
+  width: 50%;
+  align-self: center;
+}
+
+.lista{
+  width: 50%;
+  margin-left: auto;
+}
+
+/*centro la imagencreadoras*/
+
+section div img{
+  width: 100%;
+}
+
+/*propiedad flex en section="servicio"*/
+
+.img2, .lista{
+  background-color: aqua;
+  width: 50%;
+  align-self: center;
+}
