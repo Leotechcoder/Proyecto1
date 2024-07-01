@@ -16,7 +16,7 @@ ol {
 }
 
 #item7 {
-  font-size: 35px;
+  font-size: 50px;
   list-style-position: inside;
   background-color: #fcee21;
 }
@@ -67,6 +67,14 @@ footer a {
 
 body{
   width:100%;
+  height: 100vh;
+}
+#Servicios, #Contacto{
+  width:100vw;
+  height:100vh; 
+}
+.somos, .gestion{
+  height: 300px;
 }
 
 /*AJUSTE PROPIEDADES HEADER*/
@@ -108,10 +116,10 @@ main {
   border: 2px solid;
 }
 
-.ajustarimagen,
-.lista {
-  display: block;
-  width: 400px;
+/*PROPIEDADES SERVICIOS*/
+
+.img2, .lista {
+  width: 50%;
   border: 2px solid;
 }
 
@@ -119,23 +127,44 @@ ol li {
   font-size: 2em;
   list-style-position: inside;
 }
+.img2{
+  margin: auto 1px;
+  height: 557px;
+  background-image: url("./../img/img-servicios.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.lista>h3{
+  font-size: 3rem;
+  margin-top: 20px;
+}
+.lista>ol, li{
+  margin-top: 20px;
+}
+
 
 /*AJUSTE PROPIEDADES CONTACTO*/
 
-#titulocontacto {
-  display: inline-block;
+/*CLASS PCONTACTO*/
+#parag {
+  color: black;
+  background-color: #fcee21;
+}
+.pcontacto> p {
   color: white;
   background-color: black;
 }
-
-#unomas {
-  display: inline-block;
-  background-color: #fcee21;
+.pcontacto, .fcontacto{
+  width: 50%;
 }
+
+/*AJUSTE FORMULARIO*/
 
 .formulario {
   background-color: bisque;
-  width: 300px;
+  border: 1px solid;
 }
 
 label {
@@ -160,16 +189,23 @@ textarea {
 
 /*AJUSTE PROPIEDADES REDES*/
 
-div img {
+.imgredes {
   width: 100px;
-}
-
-div a,
-img {
   display: inline;
+}
+.logos1{
+  width: 20%;
+}
+.logos2{
+  width: 80%;
 }
 
 /*UTILIZO FLEX EN HEADER*/
+body{
+  display: flex;
+  flex-direction: column;
+  
+}
 
 header {
   display: flex;
@@ -188,10 +224,11 @@ ul {
 /*FLEX EN MAIN*/
 
 main section {
-  display: flex; /*aplico flex a las secciones del main*/
+  display: flex;
+  /*aplico flex a las secciones del main*/
 }
 
-/*trabajo la propiedad flex en la section="inicio"*/
+/*PROPIEDAD FLEX EN section="inicio"*/
 
 #inicio {
   flex-wrap: wrap;
@@ -205,21 +242,12 @@ main section {
   align-self: center;
 }
 
-.lista{
-  width: 50%;
-  margin-left: auto;
-}
-
-/*centro la imagencreadoras*/
-
-section div img{
+img{
   width: 100%;
+  /*centro la imagencreadoras*/
 }
 
-/*propiedad flex en section="servicio"*/
+/*FLEX EN CONTACTO*/
 
-.img2, .lista{
-  background-color: aqua;
-  width: 50%;
-  align-self: center;
-}
+
+

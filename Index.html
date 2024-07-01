@@ -19,8 +19,7 @@
     </header>
 
     <main>
-      <section id="inicio">            
-
+      <section id="inicio">
         <div class="wapas">
           <h2>somos <strong>wwwapa</strong>s</h2>
           <h4>social media managers | creadoras de contenido</h4>
@@ -32,10 +31,11 @@
               clientes!</strong
             >
           </p>
-          
         </div>
-        
-        <div class="foto"><img src="img/foto.JPG" alt="fotoautoras" class="img" /></div>
+
+        <div class="foto">
+          <img src="img/foto.JPG" alt="fotoautoras" class="img" />
+        </div>
 
         <div class="somos">
           <h3>¡Hola! Somos SOFI & JULIA,</h3>
@@ -68,13 +68,7 @@
       <hr />
 
       <section id="Servicios">
-        <div class="img2">
-          <img
-            src="img/img-servicios.png"
-            alt="Imagen servicios"
-            class="ajustarimagen"
-          />
-        </div>
+        <div class="img2"></div>
 
         <div class="lista">
           <h3>Servicios</h3>
@@ -98,59 +92,80 @@
       <hr />
 
       <section id="Contacto">
-        <p id="titulocontacto">¿Quéres que nos contactemos con vos?</p>
-        <br />
-        <p id="unomas">Envianos tu consulta >></p>
+        <div class="pcontacto">
+          <p>¿Quéres que nos contactemos con vos?</p>
+          <br />
+          <p id="parag">Envianos tu consulta >></p>
+        </div>
 
-        <form action="codigo.php" method="post" class="formulario">
-          <label for="Nombre">
-            Nombre *
-            <input
-              type="text"
-              name="nombre"
-              id="Nombre"
-              class="namemail"
-              placeholder="Juan Rios"
-            />
-          </label>
-          <label for="Email">
-            Email *
-            <input
-              type="email"
-              name="email"
-              id="Email"
-              class="namemail"
-              placeholder="info@gmail.com"
-            />
-          </label>
-          <label for="Mensaje"
-            >Mensaje *
-            <textarea name="mensaje" id="Mensaje" cols="30" rows="5"></textarea>
-          </label>
-          <label for="">
-            <input type="submit" value="Enviar consulta" class="botones" />
-            <input type="reset" value="Borrar" class="botones"
-          /></label>
-        </form>
+        <div class="fcontacto">
+          <form action="codigo.php" method="post" class="formulario">
+            <label for="Nombre">
+              Nombre *
+              <input
+                type="text"
+                name="nombre"
+                id="Nombre"
+                class="namemail"
+                placeholder="Juan Rios"
+              />
+            </label>
+            <label for="Email">
+              Email *
+              <input
+                type="email"
+                name="email"
+                id="Email"
+                class="namemail"
+                placeholder="info@gmail.com"
+              />
+            </label>
+            <label for="Mensaje"
+              >Mensaje *
+              <textarea
+                name="mensaje"
+                id="Mensaje"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </label>
+            <label for="">
+              <input type="submit" value="Enviar consulta" class="botones" />
+              <input type="reset" value="Borrar" class="botones"
+            /></label>
+          </form>
+        </div>
       </section>
 
-      <div class="logos">
-        <p>
+      <section >
+        <p class="logos1">
           Redes <br />
           wwwapas
         </p>
-        <a title="Instagram" target="_blank" href="https://www.instagram.com/"
-          ><img src="img/instagram-icon.png" alt="logo-instagram"
+        <div class="logos2">
+          <a title="Instagram" target="_blank" href="https://www.instagram.com/"
+          ><img
+            src="img/instagram-icon.png"
+            alt="logo-instagram"
+            class="imgredes"
         /></a>
 
         <a title="Whatsapp" target="_blank" href="https://web.whatsapp.com/"
-          ><img src="img/linkedin-icon.png" alt="logo-whatsapp"
+          ><img
+            src="img/linkedin-icon.png"
+            alt="logo-whatsapp"
+            class="imgredes"
         /></a>
 
         <a title="Facebook" target="_blank" href="https://web.facebook.com/"
-          ><img src="img/facebook-icon.png" alt="logo-facebook"
+          ><img
+            src="img/facebook-icon.png"
+            alt="logo-facebook"
+            class="imgredes"
         /></a>
       </div>
+        
+      </section>
     </main>
 
     <footer>
