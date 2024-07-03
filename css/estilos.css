@@ -16,9 +16,10 @@ ol {
 }
 
 #item7 {
-  font-size: 50px;
+  font-size: 2.5rem;
   list-style-position: inside;
   background-color: #fcee21;
+  overflow:hidden;
 }
 
 h2 {
@@ -66,16 +67,20 @@ footer a {
 /*AJUSTE TAMAÑO DE LOS ELEMENTOS*/
 
 body{
-  width:100%;
-  height: 100vh;
+  width:100vw;
+  padding: 5px;
 }
 #Servicios, #Contacto{
-  width:100vw;
-  height:100vh; 
+  width:100%; 
 }
 .somos, .gestion{
   height: 300px;
 }
+.lista, .somos, .wapas, .gestion, .logos1, footer,
+ header{
+  overflow: hidden;
+}
+
 
 /*AJUSTE PROPIEDADES HEADER*/
 
@@ -91,17 +96,16 @@ li a {
 footer,
 header {
   border: 2px solid coral;
-  width: 100%;
 }
 
 /*AJUSTE PROPIEDADES MAIN*/
 
 main {
-  width: 100%;
+  max-width: 100%;
 }
 
 #inicio {
-  width: 100%;
+  max-width: 100%;
 }
 
 .wapas {
@@ -193,12 +197,7 @@ textarea {
   width: 100px;
   display: inline;
 }
-.logos1{
-  width: 20%;
-}
-.logos2{
-  width: 80%;
-}
+
 
 /*UTILIZO FLEX EN HEADER*/
 body{
@@ -209,12 +208,8 @@ body{
 
 header {
   display: flex;
-}
-
-nav {
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 ul {
@@ -247,7 +242,24 @@ img{
   /*centro la imagencreadoras*/
 }
 
-/*FLEX EN CONTACTO*/
+/*FLEX EN REDES*/
+
+.redess{
+  display: flex;
+}
+/*USANDO MEDIA QUERIES*/
+
+@media(max-width: 500px){
+  header, ul, .redess, #inicio, #Servicios, #Contacto{
+    flex-direction:column;
+    align-items: center;
+  }
+
+  .wapas, .somos, .gestion, .foto, .img2, .lista, .pcontacto, .fcontacto{
+    width: 100%;
+  }
+
+}
 
 
 
