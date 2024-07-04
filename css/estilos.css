@@ -16,7 +16,7 @@ ol {
 }
 
 #item7 {
-  font-size: 2.5rem;
+  font-size: 2.5 em;
   list-style-position: inside;
   background-color: #fcee21;
   overflow:hidden;
@@ -67,20 +67,34 @@ footer a {
 /*AJUSTE TAMAÑO DE LOS ELEMENTOS*/
 
 body{
-  width:100vw;
   padding: 5px;
 }
-#Servicios, #Contacto{
-  width:100%; 
-}
-.somos, .gestion{
-  height: 300px;
-}
+
 .lista, .somos, .wapas, .gestion, .logos1, footer,
  header{
   overflow: hidden;
 }
 
+.foto,
+.somos,
+.gestion,
+.wapas{
+  width: 50%;
+  align-self: center;
+}
+
+img{
+  width: 100%;
+  /*centro la imagencreadoras*/
+}
+
+.imgredes {
+  width: 60px;
+}
+
+h3{
+  font-size: 1.3em;
+}
 
 /*AJUSTE PROPIEDADES HEADER*/
 
@@ -100,35 +114,18 @@ header {
 
 /*AJUSTE PROPIEDADES MAIN*/
 
-main {
-  max-width: 100%;
+.wapas, .foto, .somos, .gestion {
+  padding: 20px;
 }
 
-#inicio {
-  max-width: 100%;
-}
-
-.wapas {
-  border: 2px solid;
-}
-
-.somos {
-  border: 2px solid;
-}
-
-.gestion {
-  border: 2px solid;
-}
-
-/*PROPIEDADES SERVICIOS*/
+/*AJUSTE PROPIEDADES SERVICIOS*/
 
 .img2, .lista {
   width: 50%;
-  border: 2px solid;
 }
 
 ol li {
-  font-size: 2em;
+  font-size: 1.2em;
   list-style-position: inside;
 }
 .img2{
@@ -140,12 +137,8 @@ ol li {
   background-repeat: no-repeat;
 }
 
-.lista>h3{
-  font-size: 3rem;
-  margin-top: 20px;
-}
 .lista>ol, li{
-  margin-top: 20px;
+  padding-top: 10px;
 }
 
 
@@ -191,13 +184,6 @@ textarea {
   border: 1px solid turquoise;
 }
 
-/*AJUSTE PROPIEDADES REDES*/
-
-.imgredes {
-  width: 100px;
-  display: inline;
-}
-
 
 /*UTILIZO FLEX EN HEADER*/
 body{
@@ -227,19 +213,7 @@ main section {
 
 #inicio {
   flex-wrap: wrap;
-}
-
-.foto,
-.somos,
-.gestion,
-.wapas{
-  width: 50%;
-  align-self: center;
-}
-
-img{
-  width: 100%;
-  /*centro la imagencreadoras*/
+  flex-grow: 1;
 }
 
 /*FLEX EN REDES*/
@@ -256,9 +230,45 @@ img{
   }
 
   .wapas, .somos, .gestion, .foto, .img2, .lista, .pcontacto, .fcontacto{
-    width: 100%;
+    min-width:fit-content;
+    flex-grow: 1;
   }
 
+  .img2{
+    width: 90%;
+  }
+
+  .lista>h3{
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+  }
+
+  ol{
+    padding-inline: 5px;
+  }
+
+  ol>li{
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  #item7{
+    font-size: 2.5em;
+  }
+  p, h4{
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
+
+  h1, h2{
+    font-size: 3.2rem;
+  }
+
+  ul>li{
+    padding: 3px;
+    font-size: 2.3em;
+    font-weight: 700;
+  }
 }
 
 
