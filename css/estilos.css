@@ -19,7 +19,7 @@ ol {
   font-size: 2.5 em;
   list-style-position: inside;
   background-color: #fcee21;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 h2 {
@@ -66,24 +66,22 @@ footer a {
 
 /*AJUSTE TAMAÑO DE LOS ELEMENTOS*/
 
-body{
+body {
   padding: 5px;
 }
 
-.lista, .somos, .wapas, .gestion, .logos1, footer,
- header{
+.lista,
+.somos,
+.wapas,
+.gestion,
+.logos1,
+footer,
+header {
   overflow: hidden;
 }
 
-.foto,
-.somos,
-.gestion,
-.wapas{
-  width: 50%;
-  align-self: center;
-}
 
-img{
+img {
   width: 100%;
   /*centro la imagencreadoras*/
 }
@@ -92,7 +90,7 @@ img{
   width: 60px;
 }
 
-h3{
+h3 {
   font-size: 1.3em;
 }
 
@@ -114,21 +112,20 @@ header {
 
 /*AJUSTE PROPIEDADES MAIN*/
 
-.wapas, .foto, .somos, .gestion {
+.wapas,
+.foto,
+.somos,
+.gestion {
   padding: 20px;
 }
 
 /*AJUSTE PROPIEDADES SERVICIOS*/
 
-.img2, .lista {
-  width: 50%;
-}
-
 ol li {
   font-size: 1.2em;
   list-style-position: inside;
 }
-.img2{
+.img2 {
   margin: auto 1px;
   height: 557px;
   background-image: url("./../img/img-servicios.png");
@@ -137,10 +134,10 @@ ol li {
   background-repeat: no-repeat;
 }
 
-.lista>ol, li{
+.lista > ol,
+li {
   padding-top: 10px;
 }
-
 
 /*AJUSTE PROPIEDADES CONTACTO*/
 
@@ -149,12 +146,9 @@ ol li {
   color: black;
   background-color: #fcee21;
 }
-.pcontacto> p {
+.pcontacto > p {
   color: white;
   background-color: black;
-}
-.pcontacto, .fcontacto{
-  width: 50%;
 }
 
 /*AJUSTE FORMULARIO*/
@@ -184,92 +178,53 @@ textarea {
   border: 1px solid turquoise;
 }
 
-
 /*UTILIZO FLEX EN HEADER*/
-body{
+/* body{
   display: flex;
   flex-direction: column;
   
-}
+} */
 
-header {
+/* header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-}
+} */
 
 ul {
   display: flex;
 }
 
-/*FLEX EN MAIN*/
-
-main section {
-  display: flex;
-  /*aplico flex a las secciones del main*/
-}
-
-/*PROPIEDAD FLEX EN section="inicio"*/
-
-#inicio {
-  flex-wrap: wrap;
-  flex-grow: 1;
-}
-
 /*FLEX EN REDES*/
 
-.redess{
+.redess {
   display: flex;
 }
-/*USANDO MEDIA QUERIES*/
 
-@media(max-width: 500px){
-  header, ul, .redess, #inicio, #Servicios, #Contacto{
-    flex-direction:column;
-    align-items: center;
-  }
-
-  .wapas, .somos, .gestion, .foto, .img2, .lista, .pcontacto, .fcontacto{
-    min-width:fit-content;
-    flex-grow: 1;
-  }
-
-  .img2{
-    width: 90%;
-  }
-
-  .lista>h3{
-    font-size: 2rem;
-    display: block;
-    text-align: center;
-  }
-
-  ol{
-    padding-inline: 5px;
-  }
-
-  ol>li{
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
-  #item7{
-    font-size: 2.5em;
-  }
-  p, h4{
-    font-size: 1.3rem;
-    margin-top: 20px;
-  }
-
-  h1, h2{
-    font-size: 3.2rem;
-  }
-
-  ul>li{
-    padding: 3px;
-    font-size: 2.3em;
-    font-weight: 700;
-  }
+ol > li {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+#item7 {
+  font-size: 2.5em;
+}
+p,
+h4 {
+  font-size: 1.3rem;
+  margin-top: 20px;
 }
 
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: clamp(3rem,1rem + 10vw,7rem);
+}
 
-
+ul > li {
+  padding: 3px;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+ 
+ 
